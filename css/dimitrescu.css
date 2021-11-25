@@ -36,5 +36,20 @@
 }
 
 .soluce{
+   display: none;
+}
+
+.reponse{
+    text-align: center;
+}
+.reponse:hover{
+    cursor: pointer;
+}
+
+.reponse:hover .soluce{
+    display: block;
+}
+
+.soluce{
     text-align: center;
 }
