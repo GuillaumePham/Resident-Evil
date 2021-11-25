@@ -6,4 +6,5 @@
  
  respect de la charte graphique 
  
- tout est en fr 
+ tout est en fr (c'est toi qui a choisis donc t'assumes)
+ 
