@@ -5,7 +5,7 @@ body{
     background-size: cover;
     margin-top: auto;
     text-align: center;
-    
+    margin: 0 ;
 
 }
 .barre{
@@ -29,16 +29,13 @@ body{
 
 }
 .logo_village{
-    margin:40rem auto 9rem auto;
+    margin:5rem auto 9rem auto;
     align-items: center;
+    
 }
 .boutonmenu{
-    background-color:#23364B;
     text-align: center;
-    width: 153px;
-    height: 52px; 
-    border-right: 1px dotted;
-    display: none;
+    margin: auto;
 }
 .fond{
     
@@ -57,10 +54,36 @@ body{
     color:white;
 }
 .menu{
-    width: 5rem;
-    height: 2rem;
-    background-color: black;
+    width: 10rem;                       
+    border: white solid 1px;
+    margin:0rem 0rem 35rem 0rem;
+    border-radius:18px;
+    background-color: grey;
 }
 p{
     color: white;
+}
+.menu >p {
+    margin: 0rem;
+    padding: 0.6rem;
+    
+
+}
+.menu:hover{
+    margin:0rem 0rem 0rem 0rem;
+}
+
+
+.conteneurmenu{
+    width:10rem;
+    height:25rem;
+    border:white solid 2px;
+    border-radius:18px;
+    background-color: grey;
+    display:none;
+
+
+}
+.menu:hover .conteneurmenu {
+    display:flex;
 }
