@@ -1,5 +1,3 @@
-
-
 .titre{
     font-size: 25px;
     margin-top: 60px;
@@ -11,45 +9,24 @@
 
 }
 
-.fonction{
-    text-align: center;
-}
-
-.apparence{
-    text-align: center;
-}
-
-.charactère{
-    text-align: center;
-}
-
-.histoire{
-    text-align: center;
-}
-
-.comp{
-    text-align: center;
-}
-
-.faiblesse{
-    text-align: center;
-}
-
 .soluce{
    display: none;
+   text-align: center;
 }
 
-.reponse{
+.spoil{
     text-align: center;
 }
-.reponse:hover{
+.spoil:hover{
     cursor: pointer;
 }
 
-.reponse:hover .soluce{
+.spoil:hover .soluce{
     display: block;
 }
 
-.soluce{
-    text-align: center;
+.image img{
+    position:absolute;
+    width: 300px;
+    right: 50px;
 }
