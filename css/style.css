@@ -1,14 +1,11 @@
-html{
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
-    background-attachment:center fixed;
-    background-size: cover;
-    margin:0px 0px 0px 0px;
-    backdrop-filter: brightness(60%);
-}
 body{
     text-align: center;
-  
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    -webkit-backdrop-filter: brightness(60%);
+    margin: auto;
 
 }
 .barredubas{
@@ -18,14 +15,14 @@ body{
     padding: 0.1rem 0rem 0rem 0rem;
     display: flex;
     bottom: 0rem;
-    
+
 }
 .logo_village img{
     width:20rem;
 }
 .logo_village{
-    padding: 30rem 0 30rem 0;
-    margin: auto;
+    padding: 30rem 0 5rem 0;
+    margin:0rem 0rem 0rem 0rem;
     align-items: center;
     animation-duration: 2s;
     animation-name:glissade;
@@ -33,34 +30,37 @@ body{
     
 }
 .boutonmenu{
+    display: flex;
+    justify-content: center;
     width: 10rem;
     height: 2rem;
     height: 3rem;
-    margin: auto 0rem 3rem 0rem;
-    border-radius:18px;
+    margin: 0rem 0rem 0rem 0rem;
+    border-radius:10px;
     animation-duration: 2s;
     animation-name:cascade;
     text-align: center;
+    border-top:1px solid #666783;
+    /*border-bottom:1px solid white ;*/
     
     
 }
 .fond{
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    -webkit-background-fill-color:rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(4px);
     width: 100%;
     height: fit-content;
 }
 .texte{
     text-align: center;
     color: white;
-    margin: 0rem;
-    padding: 0.7rem;
+    padding: 0rem 0rem 0rem 0rem;
 }
 
 .menu{
     width: 10rem;                       
-    border: white solid 1px;
-    margin:0rem 0rem 1rem 0rem;
+    border: #666783 solid 1px;
+    margin:0rem 0rem 0rem 0rem;
     border-radius:18px;
     position: fixed;
     top:0px
@@ -74,16 +74,16 @@ p{
     
 
 }
-.menu:hover{
+.menu:hover p{
     /*0margin:0rem 0rem 0rem 0rem;*/
-    background-color: black;
+    /*background-color: black;*/
 }
 
 
 .conteneurmenu{
     border-radius:18px;
     display:none;
-    margin: 0rem 0rem 17.8rem 0rem;
+    margin: 0rem 0rem 9rem 0rem;
     height:3.2rem;
     width:40rem;
     
@@ -126,5 +126,50 @@ p{
     }
   }
   .dropdown{
-      color:white;
+      color:#59544b;
+      margin: 0rem 0rem 0rem 0rem;
   }
+  
+  
+.triangle_gauche{
+    width  : 0;
+    height : 0;
+    border-top   : 25rem solid grey;
+    border-right : 25rem solid transparent;
+    -webkit-backdrop-filter: brightness(60%);
+      }
+.gros_rectangle{
+    margin: auto;
+    width: 65rem;
+    height:25rem;
+    background-color:black;
+    background-size: contain;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;    
+    margin-bottom: 5rem;
+    }
+.gros_rectangle > p{
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    position:absolute;
+    margin-bottom: 5rem;
+}
+.logo_anniv {
+    display: flex;
+    justify-content:right;
+    position:absolute;
+    margin-top: 15rem;
+    margin-left:5rem;
+}
+.triangle_droit{
+    width  : 0;
+    height : 0;
+    border-top  : 25rem solid grey;
+    border-left : 25rem solid transparent;
+  }
+  @keyframes defilement1{
+    0%{transform: translate(0,0);}
+    100%{transform: translate(-2880px,0);}
+}
