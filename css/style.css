@@ -9,12 +9,13 @@ body{
 
 }
 .barredubas{
-    width: 100%;
+    width:100rem;
     background-color:#807877;
-    /* position: absolute; */
+    position: ;
     padding: 0.1rem 0rem 0rem 0rem;
     display: flex;
-    bottom: 0rem;
+    bottom: 0px;
+    
 
 }
 .logo_village img{
@@ -189,21 +190,55 @@ p{
     width: 2rem;
     height: 0.3rem;
     background-color: #910d18;
-    position: absolute;
+
     
 }
 .histoire_accueil{
-    margin: 5rem 5rem;
+    margin:5rem 0rem 5rem 15rem;
     display: flex;
-
-
-    
+    width: 30rem;
+    height: 15rem;
+    position: relative;
 }
 h1{
     color: white;
 }
 .img_chateau{
-    width: 100rem;
-    height: 50rem;s
+    width: 35rem;
+    height: 15rem;
     overflow: hidden;
+    border:1rem solid black;
+    border-radius: 5rem;
+}
+.fin{
+    display: flex;
+
+}
+.titre-histoire{
+    position: absolute;
+    top: 35%;
+    bottom:70%;
+    left:15%;
+    margin: 0px;
+}
+.titre-histoire > h1{
+    left:5%;
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0rem;
+}
+img:hover{
+    opacity: 0.8;
+    border-radius:10px solid black;
+    transition: opacity 0.8s;
+}
+.texte-histoire{
+    position: absolute;
+    top:85%;
+    left:30%;
+    
+}
+.texte-histoire > p{
+    font-family:'Courier New', Courier, monospace;
+    margin: 0px;
 }
