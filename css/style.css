@@ -45,12 +45,7 @@ body{
     
     
 }
-.fond{
-    -webkit-background-fill-color:rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(4px);
-    width: 100%;
-    height: fit-content;
-}
+
 .texte{
     text-align: center;
     color: white;
@@ -129,47 +124,86 @@ p{
       color:#59544b;
       margin: 0rem 0rem 0rem 0rem;
   }
-  
-  
-.triangle_gauche{
-    width  : 0;
-    height : 0;
-    border-top   : 25rem solid grey;
-    border-right : 25rem solid transparent;
-    -webkit-backdrop-filter: brightness(60%);
-      }
-.gros_rectangle{
-    margin: auto;
-    width: 65rem;
+#gros_rectangle{
+    width: 100rem;
     height:25rem;
     background-color:black;
-    background-size: contain;
-    overflow: auto;
-    display: flex;
-    justify-content: space-between;    
-    margin-bottom: 5rem;
+    display:flex;
+    justify-content: center;
+    
     }
-.gros_rectangle > p{
-    margin: auto;
-    display: flex;
-    justify-content: right;
-    position:absolute;
-    margin-bottom: 5rem;
-}
 .logo_anniv {
     display: flex;
     justify-content:right;
-    position:absolute;
     margin-top: 15rem;
     margin-left:5rem;
 }
-.triangle_droit{
-    width  : 0;
-    height : 0;
-    border-top  : 25rem solid grey;
-    border-left : 25rem solid transparent;
+.image_acueil > img{
+    width: 20rem ;
+    margin:auto;
+    margin-right:2rem ;
+    box-shadow: grey;
+}
+.ligne_rouge{
+    width: 100rem;
+    height: 0.5rem;
+    background-color: #910d18;
+}
+#fleche_droite, #fleche_gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3em;
+}
+
+#fleche_droite{
+    right: 20px;
+      color:#59544b;
+}
+#fleche_gauche{
+    left: 20px;
+   color:#59544b;
+
+}
+.conteneur_diapo{
+    overflow: hidden;
+    position: relative;
+    margin-top: 2.5rem;
+}
+@keyframes tonext {
+    img{
+       left: 50%;
+    }
   }
-  @keyframes defilement1{
-    0%{transform: translate(0,0);}
-    100%{transform: translate(-2880px,0);}
+.element{
+    width: 50rem;
+    height: 25rem;
+}
+#fleche_droite:hover .element {
+    animation-duration:1s;
+    animation:tonext;
+}
+
+.petite_ligne_rouge{
+    width: 2rem;
+    height: 0.3rem;
+    background-color: #910d18;
+    position: absolute;
+    
+}
+.histoire_accueil{
+    margin: 5rem 5rem;
+    display: flex;
+
+
+    
+}
+h1{
+    color: white;
+}
+.img_chateau{
+    width: 100rem;
+    height: 50rem;s
+    overflow: hidden;
 }
