@@ -1,31 +1,29 @@
-html{
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
-    background-attachment:center fixed;
-    background-size: cover;
-    margin:0px 0px 0px 0px;
-    backdrop-filter: brightness(60%);
-}
 body{
     text-align: center;
-  
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    -webkit-backdrop-filter: brightness(60%);
+    margin: auto;
 
 }
 .barredubas{
-    width: 100%;
+    width:100rem;
     background-color:#807877;
-    /* position: absolute; */
+    position: ;
     padding: 0.1rem 0rem 0rem 0rem;
     display: flex;
-    bottom: 0rem;
+    bottom: 0px;
     
+
 }
 .logo_village img{
     width:20rem;
 }
 .logo_village{
-    padding: 30rem 0 30rem 0;
-    margin: auto;
+    padding: 30rem 0 5rem 0;
+    margin:0rem 0rem 0rem 0rem;
     align-items: center;
     animation-duration: 2s;
     animation-name:glissade;
@@ -33,34 +31,32 @@ body{
     
 }
 .boutonmenu{
+    display: flex;
+    justify-content: center;
     width: 10rem;
     height: 2rem;
     height: 3rem;
-    margin: auto 0rem 3rem 0rem;
-    border-radius:18px;
+    margin: 0rem 0rem 0rem 0rem;
+    border-radius:10px;
     animation-duration: 2s;
     animation-name:cascade;
     text-align: center;
+    border-top:1px solid #666783;
+    /*border-bottom:1px solid white ;*/
     
     
 }
-.fond{
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
-    width: 100%;
-    height: fit-content;
-}
+
 .texte{
     text-align: center;
     color: white;
-    margin: 0rem;
-    padding: 0.7rem;
+    padding: 0rem 0rem 0rem 0rem;
 }
 
 .menu{
     width: 10rem;                       
-    border: white solid 1px;
-    margin:0rem 0rem 1rem 0rem;
+    border: #666783 solid 1px;
+    margin:0rem 0rem 0rem 0rem;
     border-radius:18px;
     position: fixed;
     top:0px
@@ -74,16 +70,16 @@ p{
     
 
 }
-.menu:hover{
+.menu:hover p{
     /*0margin:0rem 0rem 0rem 0rem;*/
-    background-color: black;
+    /*background-color: black;*/
 }
 
 
 .conteneurmenu{
     border-radius:18px;
     display:none;
-    margin: 0rem 0rem 17.8rem 0rem;
+    margin: 0rem 0rem 9rem 0rem;
     height:3.2rem;
     width:40rem;
     
@@ -126,5 +122,123 @@ p{
     }
   }
   .dropdown{
-      color:white;
+      color:#59544b;
+      margin: 0rem 0rem 0rem 0rem;
   }
+#gros_rectangle{
+    width: 100rem;
+    height:25rem;
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    
+    }
+.logo_anniv {
+    display: flex;
+    justify-content:right;
+    margin-top: 15rem;
+    margin-left:5rem;
+}
+.image_acueil > img{
+    width: 20rem ;
+    margin:auto;
+    margin-right:2rem ;
+    box-shadow: grey;
+}
+.ligne_rouge{
+    width: 100rem;
+    height: 0.5rem;
+    background-color: #910d18;
+}
+#fleche_droite, #fleche_gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3em;
+}
+
+#fleche_droite{
+    right: 20px;
+      color:#59544b;
+}
+#fleche_gauche{
+    left: 20px;
+   color:#59544b;
+
+}
+.conteneur_diapo{
+    overflow: hidden;
+    position: relative;
+    margin-top: 2.5rem;
+}
+@keyframes tonext {
+    img{
+       left: 50%;
+    }
+  }
+.element{
+    width: 50rem;
+    height: 25rem;
+}
+#fleche_droite:hover .element {
+    animation-duration:1s;
+    animation:tonext;
+}
+
+.petite_ligne_rouge{
+    width: 2rem;
+    height: 0.3rem;
+    background-color: #910d18;
+
+    
+}
+.histoire_accueil{
+    margin:5rem 0rem 5rem 15rem;
+    display: flex;
+    width: 30rem;
+    height: 15rem;
+    position: relative;
+}
+h1{
+    color: white;
+}
+.img_chateau{
+    width: 35rem;
+    height: 15rem;
+    overflow: hidden;
+    border:1rem solid black;
+    border-radius: 5rem;
+}
+.fin{
+    display: flex;
+
+}
+.titre-histoire{
+    position: absolute;
+    top: 35%;
+    bottom:70%;
+    left:15%;
+    margin: 0px;
+}
+.titre-histoire > h1{
+    left:5%;
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0rem;
+}
+img:hover{
+    opacity: 0.8;
+    border-radius:10px solid black;
+    transition: opacity 0.8s;
+}
+.texte-histoire{
+    position: absolute;
+    top:85%;
+    left:30%;
+    
+}
+.texte-histoire > p{
+    font-family:'Courier New', Courier, monospace;
+    margin: 0px;
+}
