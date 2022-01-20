@@ -31,27 +31,66 @@
             <p>le lac du village et heinserberg dirige l'usine à coté du village. Il assiste Miranda à leur manière</p>
             <p>dans ses différentes expériences avec le Cadou.</p>
             <img src="..\img\symbol.png">
-        </div>
-        <div class="dimitrescu">
-            <h3 >Dimitrescu</h3>
-            <a href="dimitrescu.html"><img src="..\img\dimitrscu.gif"></a>​
-        </div>
-        <div class="dimitrescu">
-            <h3 >Dimitrescu</h3>
-            <a href="dimitrescu.html"><img src="..\img\dimitrscu.gif"></a>​
-        </div>
-        <div class="dimitrescu">
-            <h3 >Dimitrescu</h3>
-            <a href="dimitrescu.html"><img src="..\img\dimitrscu.gif"></a>​
-        </div>
-        <div class="dimitrescu">
-            <h3 >Dimitrescu</h3>
-            <a href="dimitrescu.html"><img src="..\img\dimitrscu.gif"></a>​
-        </div>
-        <div class="dimitrescu">
-            <h3 >Dimitrescu</h3>
-            <a href="dimitrescu.html"><img src="..\img\dimitrscu.gif"></a>​
+        <div id="caroucel">
+            <div class="contenu">
+                <div class="test">
+                <input type="button" value="<" style="color: brown; width: 80px; height: 80px;" onclick="leftButton()">
+                <div class="power display" id="dimitrescu">
+                    <p>Dimitrescu</p>
+                    <a href= dimitrescu.html> <img class="boss-image" src="..\img\dimitrscu.gif" alt="merde"></a>
+                </div>
+                <div class="power" id="beneviento">
+                    <p>Beneviento</p>
+                    <a href="beneviento.html"><img class="boss-image" src="..\img\poupée.gif" alt="test"></a>
+                </div>
+                <div class="power" id="morreau">
+                    <p>Morreau</p>
+                    <a href="morreau.html"><img class="boss-image" src="..\img\morreau.gif" alt="hidden"></a>
+                </div>
+                <div class="power" id="heisenberg">
+                    <p>Heisenberg</p>
+                    <a href="heinserberg.html"><img class="boss-image" src="..\img\heinserberg.gif" alt="beneviento"></a>
+                </div>
+                <div class="power" id="miranda">
+                    <p>Miranda</p>
+                    <a href="miranda.html"><img class="boss-image" src="..\img\miranda.gif" alt="morreau"></a>
+                </div>
+                <input type="button" value=">" style="color: brown; width: 80px; height: 80px;" onclick="rightButton()">
+                </div>
+                <script>
+                    let counter = 0;
+                    let bosses = [document.getElementById("dimitrescu"), document.getElementById("beneviento"), document.getElementById("morreau"), document.getElementById("heisenberg"), document.getElementById("miranda"),]
+                    function leftButton(){
+                        counter--;
+                        if (counter < 0) {
+                            counter = 4
+                        }
+                        for (let index = 0; index < bosses.length; index++) {
+                            const element = bosses[index];
+                            element.classList.remove("display")
+                            if (counter == index) {
+                                element.classList.add("display")
+                            }
+                        }
+                    }
+                    function rightButton(){
+                        counter++;
+                        if (counter > 4) {
+                            counter = 0
+                        }
+                        for (let index = 0; index < bosses.length; index++) {
+                            const element = bosses[index];
+                            element.classList.remove("display")
+                            if (counter == index) {
+                                element.classList.add("display")
+                            }
+                        }
+                    }
+
+                </script>
+            </div>
         </div>
     </body>​
 
-</html>​
+</html>
+​

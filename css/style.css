@@ -47,6 +47,23 @@ body{
     
 }
 
+.menuarme{
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    height: 2rem;
+    height: 3rem;
+    margin: 0rem 0rem 0rem 0rem;
+    border-radius:10px;
+    animation-duration: 2s;
+    animation-name:cascade;
+    text-align: center;
+    border-top:1px solid #666783;
+    /*border-bottom:1px solid white ;*/
+    
+    
+}
+
 .texte{
     text-align: center;
     color: white;
@@ -86,6 +103,21 @@ p{
     
     
 }
+.sousmenu{
+    border-radius:18px;
+    margin: 0rem 0rem 9rem 10rem;
+    height:3.2rem;
+    width:40rem;
+    
+}
+.arme{ 
+    display:none;
+}
+
+.menuarme:hover .arme {
+    display:block;
+}
+
 .menu:hover .conteneurmenu {
     display:block;
 }
@@ -95,6 +127,17 @@ p{
     
     
 }
+
+.menuarme:hover{
+    transition: all 2s;
+    background-color: #88918a;
+}
+
+.arme:hover{
+    transition: all 2s;
+    background-color: #88918a;
+}
+
 .icone{
     margin:0rem 1rem 0rem 0rem;
 }

@@ -8,3 +8,46 @@
     text-align: center;
 
 }
+
+#caroucel{
+    width: 150rem;
+    height:31rem;
+    background-color:rgb(148, 147, 147);
+    display:flex;
+    justify-content: center;
+    
+}
+
+.contenu{
+    overflow: hidden;
+    position: relative;
+    margin: 100px 400px 10px 10px;
+}
+
+.nobles{
+    display: flex;
+    width: 50rem;
+    height: 25rem;
+}
+
+.noble{
+    justify-content: space-between;
+}
+
+.power{
+    display: none;
+}
+.display{
+    display: block;
+}
+.test{
+    display: flex;
+    flex-direction: row;
+}
+.test img{
+    width: 250px;
+    height: 250px;
+}
+input{
+    cursor: pointer;
+}
