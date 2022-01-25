@@ -6,6 +6,7 @@
 
 .vampire{
     text-align: center;
+    width: 100rem;
 
 }
 
@@ -13,4 +14,15 @@
     position:absolute;
     width: 450px;
     right: 75px;
+}
+.rectangle_wiki{
+    width: 25rem;
+    height: 50rem;
+    background-color: black;
+    position: absolute;
+    left: 75%;
+    top:25%;
+}
+body{
+    background-image: ;
 }

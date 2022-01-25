@@ -57,7 +57,7 @@ body{
     width: 10rem;                       
     border: #666783 solid 1px;
     margin:0rem 0rem 0rem 0rem;
-    border-radius:18px;
+    border-radius:18px;    
     position: fixed;
     top:0px
 }
@@ -160,11 +160,11 @@ p{
 
 #fleche_droite{
     right: 20px;
-      color:#59544b;
+    color:#59544b;
 }
 #fleche_gauche{
     left: 20px;
-   color:#59544b;
+    color:#59544b;
 
 }
 .conteneur_diapo{
@@ -178,8 +178,8 @@ p{
     }
   }
 .element{
-    width: 50rem;
-    height: 25rem;
+    width:50rem;
+    height:25rem;
 }
 #fleche_droite:hover .element {
     animation-duration:1s;
@@ -193,7 +193,7 @@ p{
 
     
 }
-.histoire_accueil{
+.cadre{
     margin:5rem 0rem 5rem 15rem;
     display: flex;
     width: 30rem;
@@ -203,7 +203,7 @@ p{
 h1{
     color: white;
 }
-.img_chateau{
+.img_cadre{
     width: 35rem;
     height: 15rem;
     overflow: hidden;
@@ -214,14 +214,14 @@ h1{
     display: flex;
 
 }
-.titre-histoire{
+.titre-cadre{
     position: absolute;
     top: 35%;
     bottom:70%;
     left:15%;
     margin: 0px;
 }
-.titre-histoire > h1{
+.titre-cadre > h1{
     left:5%;
     font-size: 1.4rem;
     font-family: 'Courier New', Courier, monospace;
@@ -232,13 +232,19 @@ img:hover{
     border-radius:10px solid black;
     transition: opacity 0.8s;
 }
-.texte-histoire{
+.texte-cadre{
     position: absolute;
     top:85%;
     left:30%;
     
 }
-.texte-histoire > p{
+.texte-cadre > p{
     font-family:'Courier New', Courier, monospace;
+    margin: 0px;
+}
+.cadres{
+    display: flex;
+    width: 100rem;
+    overflow: hidden;
     margin: 0px;
 }
