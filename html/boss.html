@@ -1,0 +1,96 @@
+<!DOCTYPE html>​
+
+<html lang="fr">​
+
+    <head>​
+
+        <meta charset="UTF-8" />
+        <link href="../css/boss.css"rel="stylesheet">
+
+        <title>boss</title>​
+
+    </head>​
+
+    <body>​
+        <h1 class="titre">Les nobles</h1>
+        <br>
+        <br>
+        <br>
+        <div class="boss"><h2>Intro</h2>
+            <p>Les nobles sont des expériences de Miranda dans le but de trouvre un hôte pour la réincarnation de</p>
+            <p>sa fille sont les mutants les plus puissant de Resident Evil Village, il dirige à eu 4 le village</p>
+            <p>et son tous les déscendants de famille de noble.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="boss"><h2>Fonctionnement</h2>
+            <p>Les nobles sont dirigé par mère Miranda, l'antagoniste principal du jeu. Les autres nobles sont Dimitrezcu,</p>
+            <p>Beneviento, Morreau et Heinserberg, miranda leur a octroyé des taches à chacun des nobles; Dimitrescu</p>
+            <p>dirige le village depuis le chateau, Beneviento le cimetierre du village, Morreau dirrige le barrage et</p>
+            <p>le lac du village et heinserberg dirige l'usine à coté du village. Il assiste Miranda à leur manière</p>
+            <p>dans ses différentes expériences avec le Cadou.</p>
+            <img src="..\img\symbol.png">
+        <div id="caroucel">
+            <div class="contenu">
+                <div class="test">
+                <input type="button" value="<" style="color: brown; width: 80px; height: 80px;" onclick="leftButton()">
+                <div class="power display" id="dimitrescu">
+                    <p>Dimitrescu</p>
+                    <a href= dimitrescu.html> <img class="boss-image" src="..\img\dimitrscu.gif" alt="merde"></a>
+                </div>
+                <div class="power" id="beneviento">
+                    <p>Beneviento</p>
+                    <a href="beneviento.html"><img class="boss-image" src="..\img\poupée.gif" alt="test"></a>
+                </div>
+                <div class="power" id="morreau">
+                    <p>Morreau</p>
+                    <a href="morreau.html"><img class="boss-image" src="..\img\morreau.gif" alt="hidden"></a>
+                </div>
+                <div class="power" id="heisenberg">
+                    <p>Heisenberg</p>
+                    <a href="heinserberg.html"><img class="boss-image" src="..\img\heinserberg.gif" alt="beneviento"></a>
+                </div>
+                <div class="power" id="miranda">
+                    <p>Miranda</p>
+                    <a href="miranda.html"><img class="boss-image" src="..\img\miranda.gif" alt="morreau"></a>
+                </div>
+                <input type="button" value=">" style="color: brown; width: 80px; height: 80px;" onclick="rightButton()">
+                </div>
+                <script>
+                    let counter = 0;
+                    let bosses = [document.getElementById("dimitrescu"), document.getElementById("beneviento"), document.getElementById("morreau"), document.getElementById("heisenberg"), document.getElementById("miranda"),]
+                    function leftButton(){
+                        counter--;
+                        if (counter < 0) {
+                            counter = 4
+                        }
+                        for (let index = 0; index < bosses.length; index++) {
+                            const element = bosses[index];
+                            element.classList.remove("display")
+                            if (counter == index) {
+                                element.classList.add("display")
+                            }
+                        }
+                    }
+                    function rightButton(){
+                        counter++;
+                        if (counter > 4) {
+                            counter = 0
+                        }
+                        for (let index = 0; index < bosses.length; index++) {
+                            const element = bosses[index];
+                            element.classList.remove("display")
+                            if (counter == index) {
+                                element.classList.add("display")
+                            }
+                        }
+                    }
+
+                </script>
+            </div>
+        </div>
+    </body>​
+
+</html>
+​
