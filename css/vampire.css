@@ -6,11 +6,42 @@
 
 .vampire{
     text-align: center;
+    background-size: cover;
 
 }
 
 .image img{
     position:absolute;
-    width: 450px;
-    right: 75px;
+    width: 350px;
+    right: 0px;
+    top: 50px;
+}
+.rectangle_wiki{
+    width: 20rem;
+    height: 35rem;
+    position: absolute;
+    left: 75%;
+    top:25%;
+}
+.petite_barre{
+    width: 20rem;
+    height: 1.5rem;
+    background-color:#910d18;
+    text-align: center;
+    border-radius:12px;
+}
+.rectangle_wiki_haut{
+    width:20rem;
+    height: 20rem;
+    background-color: #807877;
+    border-radius: 12px;
+}
+.rectangle_wiki_bas{
+    width:20rem;
+    height: 20rem;
+    background-color: black;
+    border-radius: 12px;
+}
+body{
+    background-image:url(../img/bang.jpg);
 }

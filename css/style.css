@@ -37,28 +37,26 @@ body{
     height: 2rem;
     height: 3rem;
     margin: 0rem 0rem 0rem 0rem;
-    border-radius:10px;
+    border-radius: 10px;
     animation-duration: 2s;
-    animation-name:cascade;
+    animation-name: cascade;
     text-align: center;
-    border-top:1px solid #666783;
-    /*border-bottom:1px solid white ;*/
-    
+    border-top: 1px solid #666783;
+    border-bottom: 1px solid white;
     
 }
 
-.menuarme{
+.sousmenuarme{
     display: flex;
     justify-content: center;
     width: 20rem;
     height: 2rem;
-    height: 3rem;
+    height: 3.2rem;
     margin: 0rem 0rem 0rem 0rem;
-    border-radius:10px;
     animation-duration: 2s;
     animation-name:cascade;
-    text-align: center;
-    border-top:1px solid #666783;
+    text-align:center;
+    border-radius: 10px;
     /*border-bottom:1px solid white ;*/
     
     
@@ -70,12 +68,18 @@ body{
     padding: 0rem 0rem 0rem 0rem;
     text-decoration :none;
 }
+.textearme{
+    text-align: center;
+    color: white;
+    padding: 0rem 10rem 0rem 0rem;
+    text-decoration: none;
+}
 
 .menu{
     width: 10rem;                       
     border: #666783 solid 1px;
     margin:0rem 0rem 0rem 0rem;
-    border-radius:18px;
+    border-radius:18px;    
     position: fixed;
     top:0px
 }
@@ -105,21 +109,30 @@ p{
 }
 .sousmenu{
     border-radius:18px;
-    margin: 0rem 0rem 9rem 10rem;
-    height:3.2rem;
-    width:40rem;
+    right: 79%;
+    position: fixed;
     
 }
 .arme{ 
     display:none;
+    justify-content: center;
+    width: 10rem;
+    height: 2rem;
+    height: 3rem;
+    margin: 0rem 0rem 0rem 0rem;
+    animation-duration: 2s;
+    animation-name:cascade;
+    text-align: center;
+    border-top:1px solid #666783;
 }
 
-.menuarme:hover .arme {
+.sousmenuarme:hover .arme {
     display:block;
 }
 
 .menu:hover .conteneurmenu {
     display:block;
+    margin: 0rem 0rem 0rem 0rem;
 }
 .boutonmenu:hover{
     transition: all 2s;
@@ -128,9 +141,9 @@ p{
     
 }
 
-.menuarme:hover{
+.sousmenuarme:hover{
     transition: all 2s;
-    background-color: #88918a;
+    
 }
 
 .arme:hover{
@@ -174,7 +187,7 @@ p{
     height:25rem;
     background-color:black;
     display:flex;
-    justify-content: center;
+    justify-content:center;
     
     }
 .logo_anniv {
@@ -194,50 +207,29 @@ p{
     height: 0.5rem;
     background-color: #910d18;
 }
-#fleche_droite, #fleche_gauche{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 3em;
-}
 
-#fleche_droite{
-    right: 20px;
-      color:#59544b;
+.conteneur_video{
+    padding: 2rem 10rem 0rem 10rem;
+    display:flex;
+    justify-content:space-between;
 }
-#fleche_gauche{
-    left: 20px;
-   color:#59544b;
-
+.legende_video{
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem ;
 }
-.conteneur_diapo{
-    overflow: hidden;
-    position: relative;
-    margin-top: 2.5rem;
+.legende_video >h1{
+    padding: 5rem;
 }
-@keyframes tonext {
-    img{
-       left: 50%;
-    }
-  }
-.element{
-    width: 50rem;
-    height: 25rem;
+.legende_video >p{
+    
 }
-#fleche_droite:hover .element {
-    animation-duration:1s;
-    animation:tonext;
-}
-
 .petite_ligne_rouge{
     width: 2rem;
     height: 0.3rem;
     background-color: #910d18;
-
-    
+  
 }
-.histoire_accueil{
+.cadre{
     margin:5rem 0rem 5rem 15rem;
     display: flex;
     width: 30rem;
@@ -247,7 +239,7 @@ p{
 h1{
     color: white;
 }
-.img_chateau{
+.img_cadre{
     width: 35rem;
     height: 15rem;
     overflow: hidden;
@@ -258,14 +250,14 @@ h1{
     display: flex;
 
 }
-.titre-histoire{
+.titre-cadre{
     position: absolute;
     top: 35%;
     bottom:70%;
     left:15%;
     margin: 0px;
 }
-.titre-histoire > h1{
+.titre-cadre > h1{
     left:5%;
     font-size: 1.4rem;
     font-family: 'Courier New', Courier, monospace;
@@ -276,13 +268,19 @@ img:hover{
     border-radius:10px solid black;
     transition: opacity 0.8s;
 }
-.texte-histoire{
+.texte-cadre{
     position: absolute;
     top:85%;
     left:30%;
     
 }
-.texte-histoire > p{
+.texte-cadre > p{
     font-family:'Courier New', Courier, monospace;
+    margin: 0px;
+}
+.cadres{
+    display: flex;
+    width: 100rem;
+    overflow: hidden;
     margin: 0px;
 }
