@@ -1,7 +1,3 @@
-body{
-    text-align: center;
-    margin: 0px;
-}
 .image_de_fond_accueil{
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
@@ -15,8 +11,6 @@ body{
     padding: 0.1rem 0rem 0rem 0rem;
     display: flex;
     bottom: 0px;
-    
-
 }
 .logo_village img{
     width:20rem;
@@ -26,9 +20,7 @@ body{
     margin:0rem 0rem 0rem 0rem;
     align-items: center;
     animation-duration: 2s;
-    animation-name:glissade;
-  
-    
+    animation-name:glissade; 
 }
 .boutonmenu{
     display: flex;
@@ -213,16 +205,7 @@ p{
     display:flex;
     justify-content:space-between;
 }
-.legende_video{
-    padding: 0rem 0rem 0rem 0rem;
-    margin: 0rem 0rem 0rem 0rem ;
-}
-.legende_video >h1{
-    padding: 5rem;
-}
-.legende_video >p{
-    
-}
+
 .petite_ligne_rouge{
     width: 2rem;
     height: 0.3rem;
@@ -284,12 +267,6 @@ img:hover{
     overflow: hidden;
     margin: 0px;
 }
-.titre{
-    font-size: 25px;
-    text-align: center;
-    padding-top: 50px;
-    margin-top: 0px;
-}
 .image img{
     text-align: center;
     width: 1050px;
@@ -300,10 +277,44 @@ img:hover{
     justify-content: center;
 }
 .fond_arme_poing{
-
+    margin-top:0px;
     background-image:url(../img/fond/grave.png) ;
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
+    text-align: center;
     
+}
+.text_wiki{
+    color: white;
+}
+.navigation{
+    margin-top: 12rem;
+    width:10rem;
+    height: fit-content;
+    position: fixed;
+    border: 1px solid white;
+    border-radius: 25px;
+    
+}
+.navigation > p:hover{
+    animation-name: grossir;
+    animation-duration: 1s;
+
+}
+.navigation > a {
+    text-decoration: none;
+    color:#910d18;
+}
+body{
+ text-align: center;
+}
+@keyframes grossir {
+    from {
+      
+    }
+  
+    to {
+      text-size-adjust:;
+    }
 }
