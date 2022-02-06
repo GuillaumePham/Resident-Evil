@@ -365,3 +365,11 @@ a{
 .fond_sniper{
     color: white;
 }
+.fond_lance_grenade{
+    margin-top:0px;
+    background-image:url(../img/fond/rondpoint.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+}
