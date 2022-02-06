@@ -334,3 +334,15 @@ a{
     text-align: center;
     
 }
+.fond_magnum{
+    margin-top:0px;
+    background-image:url(../img/fond/field.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+}
+.fond_magnum > img {
+    text-align: center;
+    width: 1050px;
+}
