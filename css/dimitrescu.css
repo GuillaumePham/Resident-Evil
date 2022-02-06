@@ -9,24 +9,3 @@
 
 }
 
-.soluce{
-   display: none;
-   text-align: center;
-}
-
-.spoil{
-    text-align: center;
-}
-.spoil:hover{
-    cursor: pointer;
-}
-
-.spoil:hover .soluce{
-    display: block;
-}
-
-.image img{
-    position:absolute;
-    width: 300px;
-    right: 50px;
-}
