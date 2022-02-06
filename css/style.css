@@ -354,3 +354,14 @@ a{
     background-size: cover;
     text-align: center;
 }
+.fond_sniper{
+    margin-top:0px;
+    background-image:url(../img/fond/v.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+}
+.fond_sniper{
+    color: white;
+}
