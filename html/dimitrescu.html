@@ -5,12 +5,20 @@
     <head>​
 
         <meta charset="UTF-8" />
-        <link href="../css/dimitrescu.css"rel="stylesheet">​
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+        <link href= "../css/dimitrescu.css" rel="stylesheet">
+​
 
         <title>dimitrescu</title>​
-    </head>​
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+</head>​
 
-    <body>​
+    <body>
+        <style>
+            .none{
+              display:none;
+            }
+          </style>​
         <h1 class="titre">Alcina Dimitrescu</h1>
         <div class="dimitrescu">
             <img src="..\img\dimitrscu.gif">
@@ -83,16 +91,23 @@
         <br>
         <br>
         <br>
-        <div class="spoil">
+        <div class="spoil" onclick="Solution()">
             <a><h2>Comment la vaincre ?</h2></a>
-        <div class="soluce">
-            <img src="..\img\dragon.png">
+        </div>
+        <div id="soluce">
+            <img src="..\img\dragon.png" alt="test je veut voir si ça marche">
             <p>Aprés l'avoir poignardé avec la dague et qu'elle est pris sa forme de dragon,</p>
             <p>il faut tiré sur la forme humaine se trouvant sur le dos du dragon,</p>
             <p>le fusil sniper F2 vous sera trés utile pour l'abattre.</p>
         </div>
-    </body>​
-
-</html>​
-
-​
+        <script src="../js/script.js"></script>
+        <script>
+            let exemple = document.getElementById("soluce");
+            exemple.classList.add("none");
+            
+            function Solution(){
+              exemple.classList.toggle("none");
+            }
+            </script>
+    </body>
+</html>

@@ -9,21 +9,26 @@
 
 }
 
+.bebe{
+    text-align: center;
+
+}
+
+
 .soluce{
-   display: none;
    text-align: center;
 }
 
 .spoil{
     text-align: center;
 }
-.spoil:hover{
+.spoil:active{
     cursor: pointer;
 }
 
-.spoil:hover .soluce{
-    display: block;
-}
+.none{
+    display: none;
+    }
 
 .image img{
     position:absolute;
