@@ -346,3 +346,11 @@ a{
     text-align: center;
     width: 1050px;
 }
+.fond_fusil_assaut{
+    margin-top:0px;
+    background-image:url(../img/fond/mountain.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+}
