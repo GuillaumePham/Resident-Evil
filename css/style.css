@@ -413,7 +413,7 @@ a{
     display: block;
 }
 
-.image_dimitrescu img{
+.image_boss img{
    position:absolute;
    width: 300px;
    right: 50px;
@@ -426,6 +426,18 @@ a{
     width:fit-content;
     background:rgba(0, 0, 0, 0.5);
 }
-.fond_texte > p{
-    opacity:100%;
+
+.fond_heinserberg{
+    background-image:url(../img/fond/reunion.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
+.soluce img{
+    width: 900px;
+    
 }
