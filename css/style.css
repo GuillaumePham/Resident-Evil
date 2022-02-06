@@ -3,6 +3,8 @@
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
+    text-align: center;
+    margin: auto;
 }
 .barredubas{
     width:100rem;
@@ -30,7 +32,7 @@
     height: 3rem;
     margin: 0rem 0rem 0rem 0rem;
     border-radius: 10px;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: cascade;
     text-align: center;
     border-top: 1px solid #666783;
@@ -45,7 +47,7 @@
     height: 2rem;
     height: 3.2rem;
     margin: 0rem 0rem 0rem 0rem;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-name:cascade;
     text-align:center;
     border-radius: 10px;
@@ -112,7 +114,7 @@ p{
     height: 2rem;
     height: 3rem;
     margin: 0rem 0rem 0rem 0rem;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name:cascade;
     text-align: center;
     border-top:1px solid #666783;
@@ -306,15 +308,19 @@ img:hover{
     text-decoration: none;
     color:#910d18;
 }
-body{
- text-align: center;
-}
+
 @keyframes grossir {
     from {
+        margin-top: 12rem;
+        margin-left: auto;
       
     }
   
     to {
-      text-size-adjust:;
+      margin-top: 13rem;
+      margin-left:3rem;    
     }
+}
+a{
+    text-decoration: none;
 }
