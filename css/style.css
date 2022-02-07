@@ -538,3 +538,36 @@ a{
 .image_urias > img{
     width:600px;
 }
+.fond_chevre{
+    background-image:url(../img/fond/survivor.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
+.image_chevre > img{
+    width: 600px;
+}
+.navigation_chevre{
+    width:10rem;position: fixed;
+    right: 10%;
+    top: 1%;
+    height: fit-content;
+    border: 1px solid white;
+    border-radius: 25px;
+    /*display: none;*/
+}
+/*.menu_nav{
+    position: fixed;
+    right: 10%;
+    top: 1%;
+    height: fit-content;
+    border: 1px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+
+}*/
