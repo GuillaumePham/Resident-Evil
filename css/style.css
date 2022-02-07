@@ -75,7 +75,8 @@
     margin:0rem 0rem 0rem 0rem;
     border-radius:18px;    
     position: fixed;
-    top:0px
+    top:0px;
+    left:0%;
 }
 p{
     color: white;
@@ -297,6 +298,8 @@ img:hover{
     position: fixed;
     border: 1px solid white;
     border-radius: 25px;
+    left:1%;
+    top:35%
     
 }
 .navigation > p:hover{
@@ -372,4 +375,209 @@ a{
     background-attachment:fixed;
     background-size: cover;
     text-align: center;
+}
+.fond_dimitrescu{
+    margin-top:0px;
+    background-image:url(../img/fond/winecave.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+}
+.fond_dimitrescu > .menu{
+    position: fixed;
+}
+
+.soluce{
+    display: none;
+    text-align: center;
+ }
+ 
+.spoil{
+    text-align: center;
+    
+    
+ }
+ .spoil > a{
+     color: white;
+ }
+.spoil:hover{
+    cursor: pointer;
+    
+}
+
+.spoil:hover .soluce{
+    display: block;
+}    
+
+.image_boss img{
+   position:absolute;
+   width: 300px;
+   right: 50px;
+ }
+.text_wiki_boss{
+    color:white
+    
+}
+.fond_texte{
+    width:fit-content;
+    background:rgba(0, 0, 0, 0.5);
+}
+
+.fond_heinserberg{
+    background-image:url(../img/fond/reunion.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
+.soluce img{
+    width: 900px;
+    
+}
+.fond_beneviento{
+    background-image:url(../img/fond/poupee.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
+.text_wiki_boss > img {
+    border-radius: 45px;
+}
+.fond_morreau{
+    background-image:url(../img/fond/beurk.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
+.fond_varcolacalpha{
+    background-image:url(../img/fond/v.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
+.image_varcolacalpha > img{
+    width:600px;
+}
+.text_wiki_boss >a {
+    color: white;
+}
+.fond_vampire{
+    background-image:url(../img/fond/chasse.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+
+}
+.fond_sturm{
+    background-image:url(../img/fond/bridge.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
+.fond_miranda{
+    background-image:url(../img/fond/bosse.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;  
+}
+.fond_monstre{
+    background-image:url(../img/fond/horde.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px; 
+}
+.image_monstre > img{
+    width: 400px;
+
+}
+.fond_urias{
+    background-image:url(../img/fond/survivor.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
+.image_urias > img{
+    width:600px;
+}
+.fond_chevre{
+    background-image:url(../img/fond/survivor.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
+.image_chevre > img{
+    width: 600px;
+}
+.navigation_chevre{
+    width:10rem;position: fixed;
+    right: 10%;
+    top: 1%;
+    height: fit-content;
+    border: 1px solid white;
+    border-radius: 25px;
+    /*display: none;*/
+}
+/*.menu_nav{
+    position: fixed;
+    right: 10%;
+    top: 1%;
+    height: fit-content;
+    border: 1px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+
+}*/
+.fond_bebe{
+    background-image:url(../img/fond/ha.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
 }
