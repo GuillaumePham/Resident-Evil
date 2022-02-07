@@ -571,3 +571,13 @@ a{
     justify-content: center;
 
 }*/
+.fond_bebe{
+    background-image:url(../img/fond/ha.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
