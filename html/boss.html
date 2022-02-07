@@ -5,93 +5,107 @@
     <head>​
 
         <meta charset="UTF-8" />
-        <link href="../css/boss.css"rel="stylesheet">
+        <link href="../css/style.css"rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/c6d2413c18.js" crossorigin="anonymous"></script>
         <title>boss</title>​
 
     </head>​
 
-    <body>​
-        <h1 class="titre">Les nobles</h1>
-        <br>
-        <br>
-        <br>
-        <div class="boss"><h2>Intro</h2>
-            <p>Les nobles sont des expériences de Miranda dans le but de trouvre un hôte pour la réincarnation de</p>
-            <p>sa fille sont les mutants les plus puissant de Resident Evil Village, il dirige à eu 4 le village</p>
-            <p>et son tous les déscendants de famille de noble.</p>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="boss"><h2>Fonctionnement</h2>
-            <p>Les nobles sont dirigé par mère Miranda, l'antagoniste principal du jeu. Les autres nobles sont Dimitrezcu,</p>
-            <p>Beneviento, Morreau et Heinserberg, miranda leur a octroyé des taches à chacun des nobles; Dimitrescu</p>
-            <p>dirige le village depuis le chateau, Beneviento le cimetierre du village, Morreau dirrige le barrage et</p>
-            <p>le lac du village et heinserberg dirige l'usine à coté du village. Il assiste Miranda à leur manière</p>
-            <p>dans ses différentes expériences avec le Cadou.</p>
-            <img src="..\img\symbol.png">
-        <div id="caroucel">
-            <div class="contenu">
-                <div class="test">
-                <input type="button" value="<" style="color: brown; width: 80px; height: 80px;" onclick="leftButton()">
-                <div class="power display" id="dimitrescu">
-                    <p>Dimitrescu</p>
-                    <a href= dimitrescu.html> <img class="boss-image" src="..\img\dimitrscu.gif" alt="merde"></a>
+    <body class="fond_boss">​
+        <div class="fond_texte">
+            <div class="menu">
+                <p><i class="fas fa-bars fa-0.5x"></i> Menu</p>
+                <div class="conteneurmenu">
+                    <div class="boutonmenu">
+                        <a href="../index.html"><p class="texte">Accueil</p></a>
+                    </div>
+                    <div class="boutonmenu">
+                        <a href="boss.html" class="texte"><p>Les boss</p></a>
+                    </div>
+                    <div class="sousmenuarme">
+                        <p class="textearme">Les armes</p>
+                        <div class="sousmenu">
+                            <div class="arme">
+                                <a href="arme de poing.html" class="texte"><p>Arme de poing</p></a>
+                            </div>
+                            <div class="arme">
+                                <a href="fusil.html" class="texte"><p>Fusil</p></a>
+                            </div>
+                            <div class="arme">
+                                <a href="sniper.html" class="texte"><p>Sniper</p></a>
+                            </div>
+                            <div class="arme">
+                                <a href="lance grenade.html" class="texte"><p>Lance grenade</p></a>
+                            </div>
+                            <div class="arme">
+                                <a href="fusil d'assault.html" class="texte"><p>Fusil d'assault</p></a>
+                            </div>
+                            <div class="arme">
+                                <a href="arme de mêlée.html" class="texte"><p>Arme de  mêlée</p></a>
+                            </div>
+                            <div class="arme">
+                                <a href="magnum.html" class="texte"><p>Magnum</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boutonmenu">
+                        <a href="histoire.html"><p class="texte">L'Histoire</p></a>
+                    </div>
                 </div>
-                <div class="power" id="beneviento">
-                    <p>Beneviento</p>
-                    <a href="beneviento.html"><img class="boss-image" src="..\img\poupée.gif" alt="test"></a>
-                </div>
-                <div class="power" id="morreau">
-                    <p>Morreau</p>
-                    <a href="morreau.html"><img class="boss-image" src="..\img\morreau.gif" alt="hidden"></a>
-                </div>
-                <div class="power" id="heisenberg">
-                    <p>Heisenberg</p>
-                    <a href="heinserberg.html"><img class="boss-image" src="..\img\heinserberg.gif" alt="beneviento"></a>
-                </div>
-                <div class="power" id="miranda">
-                    <p>Miranda</p>
-                    <a href="miranda.html"><img class="boss-image" src="..\img\miranda.gif" alt="morreau"></a>
-                </div>
-                <input type="button" value=">" style="color: brown; width: 80px; height: 80px;" onclick="rightButton()">
-                </div>
-                <script>
-                    let counter = 0;
-                    let bosses = [document.getElementById("dimitrescu"), document.getElementById("beneviento"), document.getElementById("morreau"), document.getElementById("heisenberg"), document.getElementById("miranda"),]
-                    function leftButton(){
-                        counter--;
-                        if (counter < 0) {
-                            counter = 4
-                        }
-                        for (let index = 0; index < bosses.length; index++) {
-                            const element = bosses[index];
-                            element.classList.remove("display")
-                            if (counter == index) {
-                                element.classList.add("display")
-                            }
-                        }
-                    }
-                    function rightButton(){
-                        counter++;
-                        if (counter > 4) {
-                            counter = 0
-                        }
-                        for (let index = 0; index < bosses.length; index++) {
-                            const element = bosses[index];
-                            element.classList.remove("display")
-                            if (counter == index) {
-                                element.classList.add("display")
-                            }
-                        }
-                    }
-
-                </script>
             </div>
-        </div>
-        <script src="script.js"></script>
+            <h1 class="titre">Les nobles</h1>
+            <br>
+            <br>
+            <br>
+            <div class="text_wiki_boss"><h2>Intro</h2>
+                <p>Les nobles sont des expériences de Miranda dans le but de trouvre un hôte pour la réincarnation de</p>
+                <p>sa fille sont les mutants les plus puissant de Resident Evil Village, il dirige à eu 4 le village</p>
+                <p>et son tous les déscendants de famille de noble.</p>
+            </div>
+            <br>
+            <br>
+            <div class="diapo">
+                <div id="caroucel">
+                    <div class="contenu">
+                        <div class="affichage_carousel">
+                            <input type="button" value="◄" class="bouton_carrousel" onclick="leftButton()">
+                            <div class="power display" id="dimitrescu">
+                                <p>Dimitrescu</p>
+                                <a href= dimitrescu.html> <img class="boss-image" src="..\img\dimitrscu.gif" alt="merde"></a>
+                            </div>
+                            <div class="power" id="beneviento">
+                                <p>Beneviento</p>
+                                <a href="beneviento.html"><img class="boss-image" src="..\img\poupée.gif" alt="affichage_carousel"></a>
+                            </div>
+                            <div class="power" id="morreau">
+                                <p>Morreau</p>
+                                <a href="morreau.html"><img class="boss-image" src="..\img\morreau.gif" alt="hidden"></a>
+                            </div>
+                            <div class="power" id="heisenberg">
+                                <p>Heisenberg</p>
+                                <a href="heinserberg.html"><img class="boss-image" src="..\img\heinserberg.gif" alt="beneviento"></a>
+                            </div>
+                            <div class="power" id="miranda">
+                                <p>Miranda</p>
+                                <a href="miranda.html"><img class="boss-image" src="..\img\miranda.gif" alt="morreau"></a>
+                            </div>
+                            <input type="button" value="►" class="bouton_carrousel" onclick="rightButton()">
+                            <script src="../js/script.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="text_wiki_boss"><h2>Fonctionnement</h2>
+                <p>Les nobles sont dirigé par mère Miranda, l'antagoniste principal du jeu. Les autres nobles sont Dimitrezcu,</p>
+                <p>Beneviento, Morreau et Heinserberg, miranda leur a octroyé des taches à chacun des nobles; Dimitrescu</p>
+                <p>dirige le village depuis le chateau, Beneviento le cimetierre du village, Morreau dirrige le barrage et</p>
+                <p>le lac du village et heinserberg dirige l'usine à coté du village. Il assiste Miranda à leur manière</p>
+                <p>dans ses différentes expériences avec le Cadou.</p>
+                <img src="..\img\symbol.png">
+    </div>
+    </div> 
     </body>​
 
 </html>
