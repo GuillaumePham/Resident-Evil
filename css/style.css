@@ -514,3 +514,17 @@ head{
     justify-content: center;
     margin-top:0px;  
 }
+.fond_monstre{
+    background-image:url(../img/fond/horde.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px; 
+}
+.image_monstre > img{
+    width: 400px;
+
+}
