@@ -504,3 +504,13 @@ head{
     justify-content: center;
     margin-top:0px;
 }
+.fond_miranda{
+    background-image:url(../img/fond/bosse.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;  
+}
