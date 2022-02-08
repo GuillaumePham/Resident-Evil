@@ -9,7 +9,6 @@
 .barredubas{
     width:100rem;
     background-color:#807877;
-    position: ;
     padding: 0.1rem 0rem 0rem 0rem;
     display: flex;
     bottom: 0px;
@@ -35,12 +34,11 @@
     animation-duration: 1s;
     animation-name: cascade;
     text-align: center;
-    border-top: 1px solid #666783;
-    border-bottom: 1px solid white;
     
+
 }
 
-.sousmenuarme{
+.sous_menu_deroulant{
     display: flex;
     justify-content: center;
     width: 20rem;
@@ -50,7 +48,7 @@
     animation-duration: 0.7s;
     animation-name:cascade;
     text-align:center;
-    border-radius: 10px;
+    
     /*border-bottom:1px solid white ;*/
     
     
@@ -61,17 +59,24 @@
     color: white;
     padding: 0rem 0rem 0rem 0rem;
     text-decoration :none;
+    
 }
-.textearme{
+.texte:hover{
+    color: #910d18;
+}
+.texte_sous_menu:hover{
+    color: #910d18;
+}
+.texte_sous_menu{
     text-align: center;
     color: white;
     padding: 0rem 10rem 0rem 0rem;
     text-decoration: none;
 }
 
+
 .menu{
     width: 10rem;                       
-    border: #666783 solid 1px;
     margin:0rem 0rem 0rem 0rem;
     border-radius:18px;    
     position: fixed;
@@ -108,7 +113,7 @@ p{
     position: fixed;
     
 }
-.arme{ 
+.element_menu_deroulant{ 
     display:none;
     justify-content: center;
     width: 10rem;
@@ -121,7 +126,7 @@ p{
     border-top:1px solid #666783;
 }
 
-.sousmenuarme:hover .arme {
+.sous_menu_deroulant:hover .element_menu_deroulant {
     display:block;
 }
 
@@ -130,20 +135,16 @@ p{
     margin: 0rem 0rem 0rem 0rem;
 }
 .boutonmenu:hover{
-    transition: all 2s;
-    background-color: #88918a;
-    
-    
+    transition: all 2s; 
 }
 
-.sousmenuarme:hover{
+.sous_menu_deroulant:hover{
     transition: all 2s;
     
 }
 
-.arme:hover{
+.texte_sous_menu:hover{
     transition: all 2s;
-    background-color: #88918a;
 }
 
 .icone{
@@ -359,7 +360,7 @@ a{
 }
 .fond_sniper{
     margin-top:0px;
-    background-image:url(../img/fond/v.png) ;
+    background-image:url(../img/fond/Chris.png) ;
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
@@ -581,3 +582,79 @@ a{
     justify-content: center;
     margin-top:0px;
 }
+.titre_boss{
+    font-size: 25px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+#caroucel{
+    width: 150rem;
+    height:31rem;
+    display:flex;
+    justify-content: center;
+    
+    
+}
+
+.contenu{
+    overflow: hidden;
+    position: relative;
+
+
+}
+.power{
+    display: none;
+}
+.display{
+    display:block;
+}
+.affichage_carousel{
+    display: flex;
+    flex-direction: row;
+}
+
+input{
+    cursor: pointer;
+}
+
+.affichage_carousel > img {
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+}
+.bouton_carrousel{
+    margin-top:10rem;
+    color:#910d18;
+    background-color:#88918a; 
+    width:30px; 
+    height:80px;
+    border-radius: 18px;
+    opacity:0.75;
+    border: #88918a 1px;
+}
+.diapo{
+    display: flex;
+    justify-content: center;
+}
+.fond_boss{
+    background-image:url(../img/fond/boss.png) ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin:0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+.boss-image{
+    border-radius:45px;
+    width: 450px;
+    height: 300px;
+    opacity:0.75;
+}
+
+.bouton_carrousel:hover {
+    background-color: #88918a;
+  }
