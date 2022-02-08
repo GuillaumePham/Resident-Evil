@@ -761,5 +761,73 @@ input{
 .cadre_tes_images{
     width: 450px;;
 }
-
-  
+@media only screen and (max-width: 800px) {
+    .image_de_fond_accueil{
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    .element_menu_deroulant{
+        size: 50%;
+        position:relative;
+        left:100%;
+        margin: 0rem 0rem 0rem 2.5rem;
+    }
+    .sous_menu_deroulant{
+        width:20rem;
+        size: 50%;
+        height: 3rem;
+        border-top:none;
+        
+    }
+    .menu >p{
+        size:0.5rem;
+    }
+    .img_cadre{
+        width: 100%;
+        height: 10%;
+    }
+    .cadre {
+        width: 10%;
+        height: 10%;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    .texte-cadre{
+        left: 10%;
+    }
+    p{
+        font-size:65%;
+    }
+    .dropdown{
+        size: 50%;
+    }
+    .logo_village > img{
+        width: 50%;
+    }
+    .logo_village {
+        padding-top:15rem;
+    }
+    #gros_rectangle{
+        width:45rem;
+        height: 20rem;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    .ligne_rouge{
+        width: 100%;
+    }
+    .conteneur_video >video{
+        width: 50%;
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+       
+    }
+    .conteneur_video {
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    .barredubas{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    html{
+        size:20%
+    }
+}
