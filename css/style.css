@@ -658,3 +658,93 @@ input{
 .bouton_carrousel:hover {
     background-color: #88918a;
   }
+.fond_histoire{
+    padding: 0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    text-align: center;
+    background-color: black;
+}
+.fond_histoire_Re7{
+    background-image:url(../img/fond/re7.png) ;
+}
+.fond_histoire_Re7 {
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin:0px 0px 0px 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;  
+}
+
+.fond_histoire_debut{
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin:0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/fond/autel.png);
+}
+.fond_texte_histoire{
+    width:100rem;
+    background:rgba(0, 0, 0, 0.5);
+}
+.fond_histoire_dimistrescu{
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin:0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/fond/vielle.png);
+
+}
+.fond_histoire_beneviento{
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin:0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/fond/poupee.png);
+}
+.fond_histoire_morreau{
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin:0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/fond/beurk.png);
+} 
+.fond_histoire_heinserberg{
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin:0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/fond/reunion.png);
+
+}
+.fond_histoire_miranda{
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin:0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/fond/bosse.png);
+}
+.fond_histoire_fin{
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    margin:0px 0px 0rem 0px;
+    padding-bottom:45rem;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/fond/end.png);
+
+}
