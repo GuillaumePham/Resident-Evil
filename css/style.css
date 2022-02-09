@@ -687,12 +687,6 @@ a{
     text-align: center;
 }
 
-
-#caroucel{
-    
-    
-    
-}
 .caroucel{
     width: 150rem;
     height:31rem;
@@ -862,6 +856,11 @@ input{
 .cadre_tes_images{
     width: 450px;;
 }
+
+.nav{
+
+}
+
 @media only screen and (max-width: 900px) {
     .image_de_fond_accueil{
         margin: 0rem 0rem 0rem 0rem;
@@ -871,6 +870,9 @@ input{
         position:relative;
         left:100%;
         margin: 0rem 0rem 0rem 2.5rem;
+    }
+    .navigation_chevre{
+        display: none;
     }
     .sous_menu_deroulant{
         width:20rem;

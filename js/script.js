@@ -134,9 +134,9 @@ function Solution8(){
 
 let compt9=0;
 let exemple9 = document.getElementById("chèvre");
-let text9 = document.getElementById("nav");
+let text9 = document.getElementById("navigation_chevre");
 text9.classList.add("none");
-function navigation(){
+function Navigation(){
   text9.classList.remove("none");
   compt9+=1
   if (compt9==2){
