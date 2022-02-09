@@ -857,10 +857,6 @@ input{
     width: 450px;;
 }
 
-.nav{
-
-}
-
 @media only screen and (max-width: 900px) {
     .image_de_fond_accueil{
         margin: 0rem 0rem 0rem 0rem;
