@@ -578,6 +578,9 @@ a{
 .text_wiki_boss >a {
     color: white;
 }
+.text_wiki_boss >h2{
+    color: white;
+}
 .fond_vampire{
     background-image:url(../img/fond/chasse.png) ;
     background-repeat: no-repeat;
@@ -923,6 +926,18 @@ input{
         display: none;
     }
     .img_arme > img{
+        width: 50%;
+    }
+    .boss-image {
+        width: 75%;
+    }
+    .image_boss > img{
+        display: none;
+    }
+    #carrousel{
+        width:20rem;
+    }
+    .soluce > img {
         width: 50%;
     }
 }
