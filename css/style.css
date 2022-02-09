@@ -690,14 +690,16 @@ a{
 
 
 #caroucel{
+    
+    
+    
+}
+.caroucel{
     width: 150rem;
     height:31rem;
     display:flex;
     justify-content: center;
-    
-    
 }
-
 .contenu{
     overflow: hidden;
     position: relative;
@@ -861,7 +863,7 @@ input{
 .cadre_tes_images{
     width: 450px;;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .image_de_fond_accueil{
         margin: 0rem 0rem 0rem 0rem;
     }
@@ -929,16 +931,24 @@ input{
         width: 50%;
     }
     .boss-image {
-        width: 75%;
+        width: 100%;
+        height: 75%;
     }
     .image_boss > img{
         display: none;
     }
-    #carrousel{
+    .caroucel{
         width:20rem;
     }
     .soluce > img {
         width: 50%;
+    }
+    .bouton_carrousel {
+        margin-top:5rem;
+    }
+    .navigation{
+        width: auto;
+        margin: auto;
     }
 }
 @media only screen and (min-width: 1400px) {
