@@ -131,3 +131,16 @@ function Solution8(){
       text8.classList.add("none");
   }
 }
+
+let compt9=0;
+let exemple9 = document.getElementById("chèvre");
+let text9 = document.getElementById("nav");
+text9.classList.add("none");
+function chèvre(){
+  text9.classList.remove("none");
+  compt9+=1
+  if (compt9==2){
+      compt9=0;
+      text9.classList.add("none");
+  }
+}
