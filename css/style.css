@@ -911,6 +911,9 @@ input{
     .barredubas{
         display: none;
     }
+    .img_arme > img{
+        width: 50%;
+    }
 }
 @media only screen and (min-width: 1400px) {
     html{
