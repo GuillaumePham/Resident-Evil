@@ -1,6 +1,6 @@
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     .container {
-      margin: 1em 2em;
+      margin: 10em 20em;
     }
   }
   
@@ -450,33 +450,62 @@ a{
     color:white
     
 }
-
-.text_wiki_boss{
+#part3{
     color:white
     
 }
 
-.text_wiki_boss{
+.part3{
     color:white
     
 }
 
-.text_wiki_boss{
+#part4{
     color:white
     
 }
 
-.text_wiki_boss{
+.part4{
     color:white
     
 }
 
-.text_wiki_boss{
+#part5{
     color:white
     
 }
 
-.text_wiki_boss{
+.part5{
+    color:white
+    
+}
+
+#part6{
+    color:white
+    
+}
+
+.part6{
+    color:white
+    
+}
+
+#part7{
+    color:white
+    
+}
+
+.part7{
+    color:white
+    
+}
+
+#part8{
+    color:white
+    
+}
+
+.part8{
     color:white
     
 }
