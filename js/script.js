@@ -27,3 +27,29 @@ function rightButton(){
         }
     }
 }
+
+let compt=0;
+let exemple = document.getElementById("part1");
+let text = document.getElementById("RE7");
+text.classList.add("none");
+function Solution(){
+  text.classList.remove("none");
+  compt+=1
+  if (compt==2){
+      compt=0;
+      text.classList.add("none");
+  }
+}
+
+let compt=0;
+let exemple = document.getElementById("part2");
+let text = document.getElementById("RE81");
+text.classList.add("none");
+function Solution(){
+  text.classList.remove("none");
+  compt+=1
+  if (compt==2){
+      compt=0;
+      text.classList.add("none");
+  }
+}
