@@ -1,3 +1,10 @@
+@media screen and (min-width: 800px) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
+  
+
 .image_de_fond_accueil{
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
@@ -6,6 +13,7 @@
     text-align: center;
     margin: auto;
 }
+
 .barredubas{
     width:100rem;
     background-color:#807877;
@@ -410,6 +418,10 @@ a{
     
 }
 
+.none{
+    display: none;
+}
+
 .spoil:hover .soluce{
     display: block;
 }    
@@ -418,7 +430,52 @@ a{
    position:absolute;
    width: 300px;
    right: 50px;
- }
+}
+
+#part1{
+    color: white;
+}
+
+.part1{
+    color:white
+    
+}
+
+#part2{
+    color:white
+    
+}
+
+.part2{
+    color:white
+    
+}
+
+.text_wiki_boss{
+    color:white
+    
+}
+
+.text_wiki_boss{
+    color:white
+    
+}
+
+.text_wiki_boss{
+    color:white
+    
+}
+
+.text_wiki_boss{
+    color:white
+    
+}
+
+.text_wiki_boss{
+    color:white
+    
+}
+
 .text_wiki_boss{
     color:white
     

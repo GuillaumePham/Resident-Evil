@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link href="../css/style.css"rel="stylesheet">​
     <script src="https://kit.fontawesome.com/c6d2413c18.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Histoire</title>​
     </head>​
@@ -79,63 +80,73 @@
                 <a href="#8"><p>Fin</p></a>  
             </div>
             <div class="fond_texte_histoire">
-            <h2  id="#"class="text_wiki_boss">Evènement de RE7</h2>
-            <p>Les évènement de RE7 ce déroule 4 ans aprés les évènement de RE6.</p>
-            <p>Dans RE7, nous suivons Ethan Winters qui a perdue sa femme Mia il y a 3 ans mais celui-ci reçoit une</p>
-            <p>vidéo de cette dernière avec une adresse, Ethan se rend à l'adresse et découvre une veille et grande</p>
-            <p>maison abandonnée dont la famille à disparue il y a 2 ans. En pénétrant dans la maison il retrouve trés</p>​
-            <p>vite Mia qui ne se rappelle pas avoir contacté Ethan, ils éssayèrent de s'échapper mais Mia devena folle</p>
-            <p>et attaqua son mari, il réussi à la tuer mais elle revint avec une tronçonneuse et lui coupa le bras,</p>
-            <p>Ethan pris une arme à feu et la tua encore une fois mais au moment de s'échapper, il se fit attaquer par</p>
-            <p>un inconnue et assomé. Lorsque qu'Ethan se réveilla, il se retrouvie face à la famille Baker constitué de Jack</p>
-            <p>le père, Margerite la mère, Lucas le fils et la grand-mère. Ethan remarqua que son bras avait été recousu et</p>
-            <p>réussie à s'enfuir, il fut aidé au téléphone par Sarah, la fille Baker qui n'était pas devenue fou comme ça famille.</p>
-            <p>Ethan réussie à s'enfuir de la maison en tuant plusieurs fois Jack mais appris que Mia était toujours en vie et</p>
-            <p>Sarah lui demanda de les aiders à trouver le remède du virus pour les sauver toutes les deux. Ethan se rendit dans</p>
-            <p>la cabane en bois prés de la maison et aprés un rude combat face à Margerite la tuera et pris les remèdes.</p>
-            <p>en retournant prés d ela maison il compris que Mia et Sarah furent prise en otage par Lucas, aprés avoir passé</p>
-            <p>tout les pièges que Lucas avait fait pour tuer Ethan, ce dernier retrouva les filles mais ce fit attaquer par</p>
-            <p>Jack Baker, aprés l'avoir encore tué, Ethan se rendit compte qu'il avait perdue l'un des deux remèdes et du choisir</p>
-            <p>entre Sarah et Mia qui allait prendre le remède, il choisit Mia et pertirent en prométtant à Sarah de revenir la chercher</p>
-            <p>Mia et Ethan se rendirent prés d'un bateau échoué et Ethan fut enlevé par des monstres. Mia en allant le chercher se</p>
-            <p>souvint qu'elle travaillé pour Connection, une organisation qui crée des armes biologiques. Ils avaient à partir d'une</p>
-            <p>substance nommé le Mégamicepte crée une fille nommait Eveline dottait de capacité psychique et capable de controler la moisissure.</p>
-            <p>L'entreprise décida de l'emmener dans un autres labo en bateau avec Mia qui faisait partie des scientifiques mais Eveline ce réveilla</p>
-            <p>et tua tout le monde sauf Mia qu'elle considéré comme sa mère, le bateau s'échoua et Mia et Eveline se firent sauver par les Bakers</p>
-            <p>et Eveline prendra le controle de Mia et toute la famille Baker pour en faire sa famille. Mia sauva Ethan et lui expliqua tout</p>
-            <p>ce qu'elle savait, mais Eveline repris le control de Mia et celle-ci s'enferma dans le bateau et demanda à Ethan d etuer Eveline.</p>
-            <p>Ethan retourna à la maison et affronta Eveline qui n'était d'autre que la grand-mère, pendant le combat, Chris Redfield, le</p>
-            <p>protagoniste des premiers RE sauva Ethan et l'aida à tué Eveline. Ethan furent embarqué et retrouva Mia saine et sauve.</p>
-            <br>
-            <p>Dans les extantions du jeux, nous jouons d'abord Chris qui retourna dans la maison pour tuer Lucas, il appris que</p>
-            <p>Lucas n'était pas vraimant controlait par Eveline et travaillait avec Connection en leur envoyant des informations</p>
-            <p>sur Eveline. Chris parvint à le retrouvé et le tué.</p>
-            <br>
-            <p>Dans l'autre extension, nous incarnons Joe Baker, le frère de Jack qui tente de sauver sa nièce Sarah, il réussit à la retrouver</p>
-            <p>mais du affronter Jack et le tua une bonne fois pour tout, les hommes de Chris les trouva et les sortis de cette enfer.</p>
-            <br>
-            <br>
-            <br>
+            <div class="part1" onclick="Solution()">
+                <a><h2  id="part1">Evènement de RE7</h2></a>
+            </div>
+            <div class="RE7" id="RE7">
+                <p>Les évènement de RE7 ce déroule 4 ans aprés les évènement de RE6.</p>
+                <p>Dans RE7, nous suivons Ethan Winters qui a perdue sa femme Mia il y a 3 ans mais celui-ci reçoit une</p>
+                <p>vidéo de cette dernière avec une adresse, Ethan se rend à l'adresse et découvre une veille et grande</p>
+                <p>maison abandonnée dont la famille à disparue il y a 2 ans. En pénétrant dans la maison il retrouve trés</p>​
+                <p>vite Mia qui ne se rappelle pas avoir contacté Ethan, ils éssayèrent de s'échapper mais Mia devena folle</p>
+                <p>et attaqua son mari, il réussi à la tuer mais elle revint avec une tronçonneuse et lui coupa le bras,</p>
+                <p>Ethan pris une arme à feu et la tua encore une fois mais au moment de s'échapper, il se fit attaquer par</p>
+                <p>un inconnue et assomé. Lorsque qu'Ethan se réveilla, il se retrouvie face à la famille Baker constitué de Jack</p>
+                <p>le père, Margerite la mère, Lucas le fils et la grand-mère. Ethan remarqua que son bras avait été recousu et</p>
+                <p>réussie à s'enfuir, il fut aidé au téléphone par Sarah, la fille Baker qui n'était pas devenue fou comme ça famille.</p>
+                <p>Ethan réussie à s'enfuir de la maison en tuant plusieurs fois Jack mais appris que Mia était toujours en vie et</p>
+                <p>Sarah lui demanda de les aiders à trouver le remède du virus pour les sauver toutes les deux. Ethan se rendit dans</p>
+                <p>la cabane en bois prés de la maison et aprés un rude combat face à Margerite la tuera et pris les remèdes.</p>
+                <p>en retournant prés d ela maison il compris que Mia et Sarah furent prise en otage par Lucas, aprés avoir passé</p>
+                <p>tout les pièges que Lucas avait fait pour tuer Ethan, ce dernier retrouva les filles mais ce fit attaquer par</p>
+                <p>Jack Baker, aprés l'avoir encore tué, Ethan se rendit compte qu'il avait perdue l'un des deux remèdes et du choisir</p>
+                <p>entre Sarah et Mia qui allait prendre le remède, il choisit Mia et pertirent en prométtant à Sarah de revenir la chercher</p>
+                <p>Mia et Ethan se rendirent prés d'un bateau échoué et Ethan fut enlevé par des monstres. Mia en allant le chercher se</p>
+                <p>souvint qu'elle travaillé pour Connection, une organisation qui crée des armes biologiques. Ils avaient à partir d'une</p>
+                <p>substance nommé le Mégamicepte crée une fille nommait Eveline dottait de capacité psychique et capable de controler la moisissure.</p>
+                <p>L'entreprise décida de l'emmener dans un autres labo en bateau avec Mia qui faisait partie des scientifiques mais Eveline ce réveilla</p>
+                <p>et tua tout le monde sauf Mia qu'elle considéré comme sa mère, le bateau s'échoua et Mia et Eveline se firent sauver par les Bakers</p>
+                <p>et Eveline prendra le controle de Mia et toute la famille Baker pour en faire sa famille. Mia sauva Ethan et lui expliqua tout</p>
+                <p>ce qu'elle savait, mais Eveline repris le control de Mia et celle-ci s'enferma dans le bateau et demanda à Ethan d etuer Eveline.</p>
+                <p>Ethan retourna à la maison et affronta Eveline qui n'était d'autre que la grand-mère, pendant le combat, Chris Redfield, le</p>
+                <p>protagoniste des premiers RE sauva Ethan et l'aida à tué Eveline. Ethan furent embarqué et retrouva Mia saine et sauve.</p>
+                <br>
+                <p>Dans les extantions du jeux, nous jouons d'abord Chris qui retourna dans la maison pour tuer Lucas, il appris que</p>
+                <p>Lucas n'était pas vraimant controlait par Eveline et travaillait avec Connection en leur envoyant des informations</p>
+                <p>sur Eveline. Chris parvint à le retrouvé et le tué.</p>
+                <br>
+                <p>Dans l'autre extension, nous incarnons Joe Baker, le frère de Jack qui tente de sauver sa nièce Sarah, il réussit à la retrouver</p>
+                <p>mais du affronter Jack et le tua une bonne fois pour tout, les hommes de Chris les trouva et les sortis de cette enfer.</p>
+                <br>
+                <br>
+                <br>
+                </div>
             </div>
         </div>
+        <script src="../js/script.js"></script>
         <div id="2" class="ligne_rouge"></div>
         <div class="fond_histoire_debut">
             <div class="fond_texte_histoire">
-                <h2  class="text_wiki_boss">RE8: début du cauchemard</h2>
-                <p>Nous sommes 2 ans aprés le sévènement de RE7, Ethan et Mia vivent ensemble et on une fille du nom de Rosemary,</p>
-                <p>un soir Ethan parle à sa femme des traumatismes qui ont vécu il y a 2 ans mais Mia veut les oublier, soudain</p>
-                <p>Mia se prit un rafalle de balle et mourut, Chris Redfield débarqua avec ses hommes en embarqua Ethan et sa fille.</p>
-                <p>Ils furent emmener dans une camionette mais aprés plusieurs heure de route, la camionette subit un accident.</p>
-                <p>A son réveille, Ethan se rendit cimpte que Rose avais disparut, il partit à sa recherche et tomba sur un village,</p>
-                <p>en y entrant, il rencontra une veil personne armé et paniqué en lui disans qu'ils arrivent, il lui donna une arme</p>
-                <p>mais une arme apparut et tua l'inconnu, Ethan se fit attaqué par une hord de Lycan et un géant nommait Urias,</p>
-                <p>alors qu'il allait se être tué, une cloche retentit et les monstres disparut, Ethan rencontra une veille femme</p>
-                <p>qui l'avertit que Rose était en grand dangé à caus ede Miranda, la veille femme disparut, aprés quelque péripétie</p>
-                <p>Ethan se rendit dans le chateau du village et si fit attaqué par un étranger qui controle le métal. Ethan se réveilla</p>
-                <p>devant les 4 nobles, Dimitrescu, Beneviento, Morreau et Heinserberg et leur chef Mère Miranda. ils décidèrent de jouer</p>
-                <p>avec lui en lui envoyant une hord de Lycan ssur Ethan.</p>
+                <div class="part2" onclick="Solution()">
+                    <a><h2  class="text_wiki_boss">RE8: début du cauchemard</h2></a>
+                </div>
+                <div class="RE81">
+                    <p>Nous sommes 2 ans aprés le sévènement de RE7, Ethan et Mia vivent ensemble et on une fille du nom de Rosemary,</p>
+                    <p>un soir Ethan parle à sa femme des traumatismes qui ont vécu il y a 2 ans mais Mia veut les oublier, soudain</p>
+                    <p>Mia se prit un rafalle de balle et mourut, Chris Redfield débarqua avec ses hommes en embarqua Ethan et sa fille.</p>
+                    <p>Ils furent emmener dans une camionette mais aprés plusieurs heure de route, la camionette subit un accident.</p>
+                    <p>A son réveille, Ethan se rendit cimpte que Rose avais disparut, il partit à sa recherche et tomba sur un village,</p>
+                    <p>en y entrant, il rencontra une veil personne armé et paniqué en lui disans qu'ils arrivent, il lui donna une arme</p>
+                    <p>mais une arme apparut et tua l'inconnu, Ethan se fit attaqué par une hord de Lycan et un géant nommait Urias,</p>
+                    <p>alors qu'il allait se être tué, une cloche retentit et les monstres disparut, Ethan rencontra une veille femme</p>
+                    <p>qui l'avertit que Rose était en grand dangé à caus ede Miranda, la veille femme disparut, aprés quelque péripétie</p>
+                    <p>Ethan se rendit dans le chateau du village et si fit attaqué par un étranger qui controle le métal. Ethan se réveilla</p>
+                    <p>devant les 4 nobles, Dimitrescu, Beneviento, Morreau et Heinserberg et leur chef Mère Miranda. ils décidèrent de jouer</p>
+                    <p>avec lui en lui envoyant une hord de Lycan ssur Ethan.</p>
+                </div>
             </div>
         </div>
+        <script src="../js/script.js"></script>
         <div id="3" class="ligne_rouge"></div>
         <div class="fond_histoire_dimistrescu">
             <div class="fond_texte_histoire">
@@ -217,7 +228,7 @@
             </div>
         </div>
     <div class="ligne_rouge"></div>
-    </body>​
+</body>​
 
 </html>​
 
